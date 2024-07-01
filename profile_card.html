@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #ffffff;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .profile-card {
+            width: 350px;
+
+            background-color: #363b51;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            padding-bottom: 10px;
+        }
+
+
+
+        .green-bg {
+            position: absolute;
+            background-color: #74f2a9;
+            width: 100%;
+            height: 120px;
+
+            z-index: 1;
+            border-bottom-left-radius: 50% 40px;
+            border-bottom-right-radius: 50% 40px;
+        }
+
+        .profile-photo {
+            position: relative;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-top: 60px;
+            border: 5px solid #ffffff;
+            z-index: 2;
+        }
+
+        .profile-header h1 {
+            margin: 0;
+
+            font-size: 26px;
+            color: #fafafa;
+            z-index: 2;
+            position: relative;
+        }
+
+        .profile-header p {
+            font-size: 14px;
+            margin: 5px 0px;
+            color: #adadad;
+            z-index: 2;
+            position: relative;
+        }
+
+        .profile-content {
+            font-size: 16px;
+            color: #fafafa;
+            margin-bottom: 20px;
+            z-index: 2;
+            position: relative;
+            padding: 0px 20px;
+        }
+
+        .profile-stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            z-index: 2;
+            position: relative;
+        }
+
+        .profile-stats div {
+            text-align: center;
+        }
+
+        .profile-stats span {
+            display: block;
+
+            font-size: 16px;
+            font-weight: bold;
+            color: #fafafa;
+        }
+
+        .profile-stats p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #fafafa;
+        }
+
+        .profile-buttons {
+            margin-top: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .follow-button {
+            padding: 10px 40px;
+            margin: 0 22px;
+            background-color: #fafafa;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            color: #363b51;
+            border: 2px solid #9a9a9a;
+            transition: background-color 0.3s ease;
+        }
+
+        .hire-button {
+            padding: 10px 40px;
+            margin: 0 22px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            color: #363b51;
+            background-color: #74f2a9;
+            transition: background-color 0.3s ease;
+        }
+
+        .follow-button:hover {
+            
+            border: 2px solid #5ac088;
+        }
+
+        .hire-button:hover {
+            background-color: #5ac088;
+        }
+
+        .contact-email p {
+            font-size: 14px;
+            margin: 5px 0px;
+            color: #89f4b6;
+            z-index: 2;
+            position: relative;
+        }
+
+        .social-media-icons {
+            display: flex;
+            justify-content: space-evenly;
+
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 100%;
+            z-index: 2;
+            position: relative;
+        }
+
+        .social-media-icons svg {
+            color: #fafafa;
+            width: 30px;
+            height: 30px;
+            fill: #fafafa;
+            font-size: 20px;
+            margin: 0 -26px;
+            cursor: pointer;
+        }
+
+        .social-media-icons svg:hover {
+            fill: #74f2a9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile-card">
+        <div class="green-bg"></div>
+        <img class="profile-photo"
+            src="https://images.ctfassets.net/s5uo95nf6njh/5PpFIeuDxz2T89nZNED1EP/48d62a69f31a3ab6dfc58938eb7b8c2a/evan-you-portrait.jpg?w=1200&fm=avif"
+            alt="" />
+        <div class="profile-header">
+            <h1>Evan You</h1>
+            <p>Software developer</p>
+        </div>
+        <div class="contact-email">
+            <p>evan.you@gmail.com</p>
+        </div>
+        <div class="profile-content">
+            <p>
+                I'm a Singapore-based independent software developer, creator of
+                Vue.js and Vite.
+            </p>
+        </div>
+        <div class="profile-stats">
+            <div>
+                <p>Projects</p>
+                <span>18</span>
+            </div>
+            <div>
+                <p>Following</p>
+                <span>464</span>
+            </div>
+            <div>
+                <p>Followers</p>
+                <span>852</span>
+            </div>
+        </div>
+        <div class="social-media-icons">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="twitter">
+                <path
+                    d="M16 3.539a6.839 6.839 0 0 1-1.89.518 3.262 3.262 0 0 0 1.443-1.813 6.555 6.555 0 0 1-2.08.794 3.28 3.28 0 0 0-5.674 2.243c0 .26.022.51.076.748a9.284 9.284 0 0 1-6.761-3.431 3.285 3.285 0 0 0 1.008 4.384A3.24 3.24 0 0 1 .64 6.578v.036a3.295 3.295 0 0 0 2.628 3.223 3.274 3.274 0 0 1-.86.108 2.9 2.9 0 0 1-.621-.056 3.311 3.311 0 0 0 3.065 2.285 6.59 6.59 0 0 1-4.067 1.399c-.269 0-.527-.012-.785-.045A9.234 9.234 0 0 0 5.032 15c6.036 0 9.336-5 9.336-9.334 0-.145-.005-.285-.012-.424A6.544 6.544 0 0 0 16 3.539z">
+                </path>
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="2500" height="2389" viewBox="0 5 1036 990" id="linkedin">
+                <path
+                    d="M0 120c0-33.334 11.667-60.834 35-82.5C58.333 15.833 88.667 5 126 5c36.667 0 66.333 10.666 89 32 23.333 22 35 50.666 35 86 0 32-11.333 58.666-34 80-23.333 22-54 33-92 33h-1c-36.667 0-66.333-11-89-33S0 153.333 0 120zm13 875V327h222v668H13zm345 0h222V622c0-23.334 2.667-41.334 8-54 9.333-22.667 23.5-41.834 42.5-57.5 19-15.667 42.833-23.5 71.5-23.5 74.667 0 112 50.333 112 151v357h222V612c0-98.667-23.333-173.5-70-224.5S857.667 311 781 311c-86 0-153 37-201 111v2h-1l1-2v-95H358c1.333 21.333 2 87.666 2 199 0 111.333-.667 267.666-2 469z">
+                </path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="github">
+                <path
+                    d="M7.999 0C3.582 0 0 3.596 0 8.032a8.031 8.031 0 0 0 5.472 7.621c.4.074.546-.174.546-.387 0-.191-.007-.696-.011-1.366-2.225.485-2.695-1.077-2.695-1.077-.363-.928-.888-1.175-.888-1.175-.727-.498.054-.488.054-.488.803.057 1.225.828 1.225.828.714 1.227 1.873.873 2.329.667.072-.519.279-.873.508-1.074-1.776-.203-3.644-.892-3.644-3.969 0-.877.312-1.594.824-2.156-.083-.203-.357-1.02.078-2.125 0 0 .672-.216 2.2.823a7.633 7.633 0 0 1 2.003-.27 7.65 7.65 0 0 1 2.003.271c1.527-1.039 2.198-.823 2.198-.823.436 1.106.162 1.922.08 2.125.513.562.822 1.279.822 2.156 0 3.085-1.87 3.764-3.652 3.963.287.248.543.738.543 1.487 0 1.074-.01 1.94-.01 2.203 0 .215.144.465.55.386A8.032 8.032 0 0 0 16 8.032C16 3.596 12.418 0 7.999 0z">
+                </path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="slack">
+                <path
+                    d="M12 16a3 3 0 0 0 0-6H6a3 3 0 0 0 0 6zm-7-3a1 1 0 0 1 1-1h6a1 1 0 0 1 0 2H6a1 1 0 0 1-1-1zm21 3a1 1 0 0 0 0 2 1 1 0 0 1 0 2h-6a1 1 0 0 1 0-2h2a1 1 0 0 0 0-2h-2a3 3 0 0 0 0 6h6a3 3 0 0 0 0-6zm-13 1a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0v-6a3 3 0 0 0-3-3zm1 9a1 1 0 0 1-2 0v-6a1 1 0 0 1 2 0zm8-14V6a3 3 0 0 0-6 0v6a3 3 0 0 0 6 0zm-4 0V6a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0zm10 .5a2.5 2.5 0 0 0-5 0V15h2.5a2.5 2.5 0 0 0 2.5-2.5zm-3 0a.5.5 0 1 1 .5.5H25zM19.5 23H17v2.5a2.5 2.5 0 1 0 2.5-2.5zm0 3a.5.5 0 0 1-.5-.5V25h.5a.5.5 0 0 1 0 1zM4 19.5a2.5 2.5 0 0 0 5 0V17H6.5A2.5 2.5 0 0 0 4 19.5zm3 0a.5.5 0 1 1-.5-.5H7zM12.5 9H15V6.5A2.5 2.5 0 1 0 12.5 9zm0-3a.5.5 0 0 1 .5.5V7h-.5a.5.5 0 0 1 0-1z">
+                </path>
+            </svg>
+        </div>
+        <div class="profile-buttons">
+            <button class="follow-button">Follow</button>
+            <button class="hire-button">Hire Me</button>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
