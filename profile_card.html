@@ -14,8 +14,9 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background: #ffffff;
+            background: #fafafa;
             font-family: "Roboto", sans-serif;
+      
         }
 
         .profile-card {
@@ -42,6 +43,17 @@
             z-index: 1;
             border-bottom-left-radius: 50% 40px;
             border-bottom-right-radius: 50% 40px;
+        }
+
+        .bottom-green-bg {
+            position: absolute;
+            background-color: #74f2a9;
+            width: 100%;
+            height: 80px;
+            bottom: 0px;
+            z-index: 1;
+            border-top-left-radius: 50% 40px;
+            border-top-right-radius: 50% 40px;
         }
 
         .profile-photo {
@@ -89,10 +101,7 @@
             position: relative;
         }
 
-        .profile-stats div {
-            text-align: center;
-        }
-
+        
         .profile-stats span {
             display: block;
 
@@ -105,50 +114,9 @@
             margin: 5px 0;
             font-size: 14px;
             color: #fafafa;
+            font-weight: 00;
         }
 
-        .profile-buttons {
-            margin-top: 10px;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-
-        }
-
-        .follow-button {
-            padding: 10px 40px;
-            margin: 0 22px;
-            background-color: #fafafa;
-            border-radius: 8px;
-            font-size: 14px;
-            font-weight: 600;
-            cursor: pointer;
-            color: #363b51;
-            border: 2px solid #9a9a9a;
-            transition: background-color 0.3s ease;
-        }
-
-        .hire-button {
-            padding: 10px 40px;
-            margin: 0 22px;
-            border: none;
-            border-radius: 8px;
-            font-size: 14px;
-            font-weight: 600;
-            cursor: pointer;
-            color: #363b51;
-            background-color: #74f2a9;
-            transition: background-color 0.3s ease;
-        }
-
-        .follow-button:hover {
-
-            border: 2px solid #5ac088;
-        }
-
-        .hire-button:hover {
-            background-color: #5ac088;
-        }
 
         .profile-contact {
 
@@ -194,17 +162,17 @@
         }
 
         .social-media-icons svg {
-            color: #fafafa;
+
             width: 30px;
             height: 30px;
-            fill: #fafafa;
+            fill: #363b51;
             font-size: 20px;
             margin: 0 -26px;
             cursor: pointer;
         }
 
         .social-media-icons svg:hover {
-            fill: #74f2a9;
+            fill: #fafafa;
         }
 
         .social-media-contact-text p {
@@ -220,6 +188,7 @@
 <body>
     <div class="profile-card">
         <div class="green-bg"></div>
+        <div class="bottom-green-bg"></div>
         <img class="profile-photo"
             src="https://media.licdn.com/dms/image/D5603AQFJygttG78Tug/profile-displayphoto-shrink_800_800/0/1700911767883?e=1725494400&v=beta&t=mxcq1lbhJPdge7_9yB9Fu5ZqANL4Lx5PWzmBqJDWNPA"
             alt="" />
